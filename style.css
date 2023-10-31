@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-width: 350px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+/* ACTIVE STATE */
+
+button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  margin: 20px 0 10px 0;
+  font-weight: 700;
+  width: 100%;
+}
+
+.numberContainer {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.number {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: hsl(210, 4%, 26%);
+  color: hsl(217, 12%, 63%);
+  padding: 10px;
+  border-radius: 50%;
+  width: 20%;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.number:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+h2 {
+  margin: 10px 0px;
+}
+
+.container p {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.fa-star {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(210, 4%, 26%);
+  padding: 10px;
+  border-radius: 50%;
+  width: 12%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* THANK YOU STATE */
+
+#thankYouState p {
+  font-size: 0.9rem;
+}
+
+#thankYouState {
+  text-align: center;
+}
+
+.thank-you {
+  margin: 10px;
+}
+
+.score {
+  margin: 10px auto;
+  background-color: hsl(214, 17%, 26%);
+  padding: 7px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  width: 55%;
+  color: hsl(25, 82%, 62%);
+  font-weight: 500;
+}
+
+img {
+  margin: 20px auto;
+}
+
+#thankYouState {
+  display: none;
+}
+
+.numberContainer input[type="radio"] {
+  display: none;
+}
+
+.numberContainer input[type="radio"]:checked + .number {
+  background-color: hsl(214, 15%, 61%);
+  color: white;
+}
+
+/* FOOTER */
+.attribution {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+}
+
+.attribution a:visited {
+  color: hsl(25, 82%, 62%);
+}
+
+.attribution a:link {
+  color: hsl(25, 82%, 62%);
+}
